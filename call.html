@@ -77,6 +77,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
   }
+  .telegram-popup-content img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #0088cc;
+  }
   .telegram-popup-content h3 {
     color: #0088cc;
     margin-bottom: 15px;
@@ -91,11 +97,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     font-weight: bold;
     color: #333;
   }
-  .telegram-popup-content .discount-offer {
-    font-weight: bold;
-    color: #e44d26;
-    margin-top: 10px;
-  }
+
   .telegram-popup-content a {
     display: inline-block;
     background-color: #0088cc;
@@ -152,9 +154,10 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <div class="telegram-popup-overlay" id="telegramPopup">
   <div class="telegram-popup-content">
     <span class="telegram-popup-close" onclick="document.getElementById('telegramPopup').classList.remove('active');">&times;</span>
-    <h3>¡No te pierdas esta oportunidad única!</h3>
-    <p>Únete a nuestro canal de Telegram y recibe una <b>conferencia gratuita</b> del <span class="doctor-name">Dr. Federico Lombera Romero</span> sobre cómo mantener tus vasos sanguíneos sanos, ¡además de un <b>50% de descuento</b> en todos tus próximos pedidos!</p>
-    <a href="https://t.me/+-PyAcwvOtwEwZWEy" target="_blank">¡Quiero unirme ahora!</a>
+    <img src="doctor_image.png" alt="Dr. Federico Lombera Romero">
+    <h3>¡Consulta Gratuita con el Dr. Federico Lombera Romero!</h3>
+    <p>Únete a nuestro canal de Telegram para una <b>consulta gratuita</b> con el <span class="doctor-name">Dr. Federico Lombera Romero</span> sobre cómo mantener tus vasos sanguíneos sanos.</p>
+    <a href="https://t.me/+-PyAcwvOtwEwZWEy" target="_blank">¡Obtén tu consulta gratuita aquí!</a>
   </div>
 </div>
 <script>
@@ -164,3 +167,4 @@ $('#telegramPopup').addClass('active');
 </script>
 </body>
 </html>
+
